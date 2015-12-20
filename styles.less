@@ -1,0 +1,69 @@
+.tree-view {
+
+}
+
+.editor {
+}
+
+.editor .cursor {
+
+}
+
+// .underlayer {
+//   background-image: url("/Users/shinobu/Downloads/wallpaper.jpg");
+//   opacity: 0.20;
+//   background-repeat: no-repeat;
+//   background-size: auto 100%;
+// }
+
+atom-text-editor::shadow {
+    .line.cursor-line {
+        background-image: linear-gradient( to right,rgba(130,130,130,0) 0%, rgba(130,130,255,.8) 100%);
+    }
+    // カーソルを四角にする
+    .cursor {
+        border: none; // 横線を消す
+        background-color: rgba(255,255,255,.5);// 背景色を変更
+    }
+    // 非アクティブなペインでカーソルが表示され続ける
+    // 点滅を止める
+    .is-focused .cursors.blink-off .cursor {
+        opacity: 1;
+    }
+    .line-number.cursor-line-no-selection, :host .line-number.cursor-line-no-selection {
+      background-color: rgba(255, 0, 0, 10);
+    }
+}
+
+// md styles
+
+atom-text-editor::shadow .gfm .link, :host .gfm .link {
+  color: rgb(89, 144, 227);
+}
+
+atom-text-editor::shadow .gfm .link .entity, :host .gfm .link .entity {
+  color: rgb(213, 221, 53);
+}
+
+atom-text-editor::shadow .gfm .markup.heading-2, :host .gfm .markup.heading {
+  color: rgb(213, 109, 238);
+}
+
+atom-text-editor::shadow .gfm .markup.heading-1, :host .gfm .markup.heading {
+  color: #ff3333;
+}
+
+// cursorを丸く
+// atom-text-editor::shadow {
+//     .cursor {
+//        height: 10px !important;
+//        width: 10px !important;
+//        border: none;
+//        border-radius: 5px;
+//        margin-top: 6px;
+//        background-color: rgba(255,255,255,.9); box-shadow: 0px 0px 10px rgba(255,255,255,1);
+//    }
+// }
+
+
+// markdown

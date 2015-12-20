@@ -1,0 +1,11 @@
+storage
+compile-cache
+dev
+.npm
+.node-gyp
+packages
+config.cson
+init.coffee
+projects.cson
+.apm
+blob-store
